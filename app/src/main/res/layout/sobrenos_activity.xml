@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#aaffab">
+
+    <!-- Conteúdo principal da atividade -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <!-- Toolbar para o menu -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+
+
+    <TextView
+        android:id="@+id/sobre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="400dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="SOBRE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#036E2A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="400dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="NÓS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#036E2A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textinho"
+        android:layout_width="371dp"
+        android:layout_height="298dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="220dp"
+        android:fontFamily="@font/alata"
+        android:text="Somos a 123 ECO, uma empresa especializada em coleta gratuita de lixo eletrônico.  Com objetivo voltado ao desenvolvimento sustentável. A 123 realiza transportes. segregação e destinação final de resíduos sólidos eletroeletrônicos.  Fazemos a coleta desses materiais e damos início ao processo de teste, separação. manufatura reversa e armazenamento. Após essa primeira triagem, os materiais são encaminhados para refinarias, onde servirão de matéria prima para novos produtos."
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sobre" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

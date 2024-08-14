@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/arvore" />
+
+    <item
+        android:id="@+id/nav_Sbrn"
+        android:title="SOBRE NÓS"
+        android:icon="@drawable/insta"
+       />
+
+    <item
+        android:id="@+id/nav_flcn"
+        android:title="FALE CONOSCO"
+        android:icon="@drawable/zapzap"
+      />
+
+</menu>
