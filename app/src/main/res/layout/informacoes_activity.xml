@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="400dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="INFORMAÇÕES"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#036E2A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="350dp"
+        android:layout_height="406dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/alata"
+        android:text="O primeiro contato: já possui os lixos eletrônicos separados? Então basta entrar em contato conosco para agendar o dia e o horário da coleta. Para você que se encaixa no segmento de parcerias (empresas, escolas e condomínios), fornecemos coletores e materiais explicativos para deixar no local cadastrado; Solicite no seu no primeiro contato.  A Coleta: após o agendamento, nossa equipe vai até o local combinado e faz a retirada dos lixos eletrônicos.  Recibo da coleta: no momento da retirada dos equipamentos, será fornecido um recibo nominal e um relatório de descarte consciente."
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
