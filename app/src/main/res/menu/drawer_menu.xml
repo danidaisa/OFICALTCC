@@ -8,10 +8,10 @@
 
     <item
         android:id="@+id/nav_Sbrn"
-        android:title="SOBRE NÓS"
         android:icon="@drawable/insta"
-       />
-
+        android:onClick="SobreNosActivity"
+        android:title="SOBRE NÓS" />
+-
     <item
         android:id="@+id/nav_flcn"
         android:title="FALE CONOSCO"

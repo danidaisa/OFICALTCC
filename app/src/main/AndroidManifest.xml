@@ -31,6 +31,24 @@
             android:exported="true">
         </activity>
 
+        <activity
+            android:name=".FaleConoscoActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".InformacoesActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".SobreNosActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".CadastroActivity2"
+            android:exported="true">
+        </activity>
+
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

@@ -43,6 +43,7 @@ public class MenuActivity extends AppCompatActivity implements NavigationView.On
         int[] images = {R.drawable.arvore, R.drawable.insta, R.drawable.emailbb};
         ImageCarrouselAdapter adapter = new ImageCarrouselAdapter(images);
         viewPager2.setAdapter(adapter);
+
     }
 
     @Override
