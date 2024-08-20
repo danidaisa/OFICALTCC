@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aaffab"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/perfilImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/emailbb"></ImageView>
+
+
+    <TextView
+        android:id="@+id/perfilName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:text="Nome da Pessoa"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/perfilEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email@exemplo.com"
+        android:textSize="16sp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/editPerfilBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editar Perfil"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
