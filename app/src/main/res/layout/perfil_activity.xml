@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/perfilImage"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="246dp"
+        android:layout_height="312dp"
         android:layout_gravity="center"
         android:layout_marginBottom="16dp"
         android:scaleType="centerCrop"
@@ -37,8 +37,12 @@
     <Button
         android:id="@+id/editPerfilBtn"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="54dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
         android:text="Editar Perfil"
-        android:layout_gravity="center"/>
+        android:textColor="#F4F6F4"
+        android:textColorHighlight="#3B5E14"
+        android:textColorLink="#005128" />
 
 </LinearLayout>
