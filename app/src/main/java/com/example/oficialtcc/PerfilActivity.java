@@ -35,7 +35,7 @@ public class PerfilActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Abrir a atividade de edição
-                Intent intent = new Intent(MainActivity.this, EditPerfilActivity.class);
+                Intent intent = new Intent(PerfilActivity.this, EditPerfilActivity.class);
                 // Passar os dados para a nova atividade
                 intent.putExtra("name", name);
                 intent.putExtra("email", email);

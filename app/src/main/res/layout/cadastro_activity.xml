@@ -15,7 +15,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="129dp"
         android:layout_marginBottom="400dp"
-        android:fontFamily="@font/archivo_black"
+        android:fontFamily="@font/candal"
         android:text="CADASTRO"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         android:textColor="#036E2A"
