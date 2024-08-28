@@ -7,27 +7,32 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class LoginActivity  extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_activity);
-        {
-            Button btnButtonAtivity = findViewById(R.id.entrar);
 
-            btnButtonAtivity.setOnClickListener(new View.OnClickListener() {
-                @Override
+        Button btnEntrar = findViewById(R.id.entrar);
+        Button btnCadastro = findViewById(R.id.CAD);
 
-                public void onClick(View v){
-                    Intent intent = new Intent(LoginActivity.this,
-                            MenuActivity.class);
-                    startActivity(intent);
+        // Configura o onClickListener para o botão "ENTRAR"
+        btnEntrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
+                startActivity(intent);
+            }
+        });
 
-
-                }
-            });
-        }}
-
-        }
-
+        // Configura o onClickListener para o botão "CADASTRO"
+        btnCadastro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, CadastroActivity2.class);
+                startActivity(intent);
+            }
+        });
+    }
+}

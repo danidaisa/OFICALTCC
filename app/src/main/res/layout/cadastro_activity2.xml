@@ -53,7 +53,7 @@
 
     <!-- Campo de Senha -->
     <EditText
-        android:id="@+id/editTextPassword"
+        android:id="@+id/editTextTextPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -65,18 +65,23 @@
         app:layout_constraintWidth_percent="0.8" />
 
     <!-- Botão de Cadastro -->
+
     <Button
-        android:id="@+id/buttonRegister"
+        android:id="@+id/entrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Cadastrar"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="109dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="88dp"
+        android:onClick="MenuActivity"
+        android:text="CADASTRAR"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/voltlogin"
         android:layout_width="65dp"
         android:layout_height="71dp"
         android:layout_marginStart="16dp"
