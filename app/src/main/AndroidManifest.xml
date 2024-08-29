@@ -47,7 +47,18 @@
             android:name=".CadastroActivity2"
             android:exported="true">
         </activity>
-
+        <activity
+            android:name=".EditPerfilActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".PerfilActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".CadastroActivity"
+            android:exported="true">
+        </activity>
 
         <meta-data
             android:name="preloaded_fonts"

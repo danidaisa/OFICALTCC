@@ -1,58 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#aaffab"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:background="#E8F5E9"> <!-- Fundo verde claro suave -->
 
+    <!-- Imagem de perfil -->
     <ImageView
-        android:id="@+id/perfilImage"
-        android:layout_width="246dp"
-        android:layout_height="312dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="16dp"
+        android:id="@+id/profileImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/arvore"
         android:scaleType="centerCrop"
-        android:src="@drawable/emailbb"></ImageView>
+        android:background="@drawable/profile_image_border"
+        android:elevation="8dp" />
 
-
+    <!-- Nome -->
     <TextView
         android:id="@+id/perfilName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="8dp"
+        android:layout_below="@id/profileImage"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
         android:text="Nome da Pessoa"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#1B5E20"
+        android:fontFamily="sans-serif" />
 
+    <!-- Email -->
     <TextView
         android:id="@+id/perfilEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/perfilName"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
         android:text="email@exemplo.com"
-        android:textSize="16sp"
-        android:layout_gravity="center"/>
+        android:textSize="20sp"
+        android:textColor="#4E342E"
+        android:fontFamily="sans-serif-light" />
 
+    <!-- Botão Editar Perfil -->
     <Button
         android:id="@+id/editPerfilBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="54dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="24dp"
+        android:layout_width="260dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/perfilEmail"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
         android:text="Editar Perfil"
-        android:onClick="EditPerfilActivity"
-        android:textColor="#F4F6F4"
-        android:textColorHighlight="#3B5E14"
-        android:textColorLink="#005128" />
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button"
+        android:elevation="4dp" />
 
+    <!-- Botão Voltar ao Menu -->
     <Button
         android:id="@+id/Menu"
-        android:layout_width="138dp"
-        android:layout_height="54dp"
-        android:onClick="MenuActivity"
-        android:layout_gravity="center"
-        android:layout_marginTop="24dp"
-        android:text="VOLTAR AO MENU" />
+        android:layout_width="260dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/editPerfilBtn"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Voltar ao Menu"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:background="@drawable/outlined_button"
+        android:elevation="4dp" />
 
-</LinearLayout>
+</RelativeLayout>

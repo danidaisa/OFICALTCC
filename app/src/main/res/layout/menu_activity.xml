@@ -22,7 +22,7 @@
 
         <!-- ViewPager2 para exibir o carrossel de imagens -->
         <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/viewPager2"
+            android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </LinearLayout>
@@ -35,13 +35,12 @@
         android:layout_gravity="start"
         app:menu="@menu/drawer_menu">
 
-        <!-- Cabeçalho do NavigationView (opcional) -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"
             android:orientation="vertical">
-            <!-- Adicione elementos de cabeçalho aqui, se necessário -->
+
         </LinearLayout>
     </com.google.android.material.navigation.NavigationView>
 

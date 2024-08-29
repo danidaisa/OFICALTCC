@@ -6,71 +6,49 @@
     android:layout_height="match_parent"
     android:foregroundTintMode="add">
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
+    <TextView
+        android:id="@+id/SENHA2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="101dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="14dp"
-        android:backgroundTint="#636363"
-        android:backgroundTintMode="add"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/SENHA"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="242dp"
+        android:layout_marginBottom="15dp"
+        android:text="SENHA"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EMAIL" />
-
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="101dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="200dp"
-        android:backgroundTint="#636363"
-        android:backgroundTintMode="add"
-        android:ems="10"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SENHA" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
 
     <Button
         android:id="@+id/entrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="101dp"
-        android:layout_marginTop="109dp"
         android:layout_marginEnd="17dp"
         android:layout_marginBottom="88dp"
         android:onClick="MenuActivity"
         android:text="ENTRAR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/CAD"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/CAD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="17dp"
-        android:layout_marginTop="109dp"
         android:layout_marginEnd="68dp"
         android:layout_marginBottom="88dp"
         android:onClick="CadastroActivity2"
         android:text="CADASTRO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/entrar"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintStart_toEndOf="@+id/entrar" />
 
     <TextView
-        android:id="@+id/LOG"
+        android:id="@+id/EDIT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="126dp"
@@ -91,27 +69,46 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="101dp"
-        android:layout_marginTop="168dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="251dp"
         android:text="EMAIL"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LOG" />
+        app:layout_constraintTop_toBottomOf="@+id/EDIT" />
 
-    <TextView
-        android:id="@+id/SENHA"
+    <EditText
+        android:id="@+id/editTextText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="103dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="242dp"
-        android:text="SENHA"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        android:layout_marginStart="11dp"
+        android:backgroundTint="#636363"
+        android:backgroundTintMode="add"
+        android:ems="10"
+        android:scrollbarSize="16dp"
+        android:text="email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EMAIL" />
+
+    <EditText
+        android:id="@+id/editTextText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="94dp"
+        android:backgroundTint="#636363"
+        android:backgroundTintMode="add"
+        android:ems="10"
+        android:text="senha"
+        app:layout_constraintBottom_toTopOf="@+id/entrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/SENHA2"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
