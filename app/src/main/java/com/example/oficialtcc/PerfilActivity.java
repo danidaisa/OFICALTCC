@@ -21,7 +21,7 @@ public class PerfilActivity extends AppCompatActivity {
         setContentView(R.layout.perfil_activity);
 
         // Referências aos componentes
-        ImageView profileImage = findViewById(R.id.perfilImage);
+        ImageView profileImage = findViewById(R.id.profileImage);
         profileName = findViewById(R.id.perfilName);
         profileEmail = findViewById(R.id.perfilEmail);
         Button editProfileButton = findViewById(R.id.editPerfilBtn);

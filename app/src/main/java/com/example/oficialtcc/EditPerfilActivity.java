@@ -1,48 +1,50 @@
 package com.example.oficialtcc;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.oficialtcc.R;
+
 public class EditPerfilActivity extends AppCompatActivity {
+
+    private EditText editName, editEmail;
+    private Button saveButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_perfil);
 
-        // Referências aos componentes
-        EditText editName = findViewById(R.id.editName);
-        EditText editEmail = findViewById(R.id.editEmail);
-        Button saveButton = findViewById(R.id.saveButton);
+        // Inicializar os componentes do layout
+        editName = findViewById(R.id.editName);
+        editEmail = findViewById(R.id.editEmail);
+        saveButton = findViewById(R.id.saveButton);
 
-        // Receber os dados da intenção
-        Intent intent = getIntent();
-        String name = intent.getStringExtra("name");
-        String email = intent.getStringExtra("email");
-
-        // Preencher os campos com os dados recebidos
-        editName.setText(name);
-        editEmail.setText(email);
-
-        // Configurar o botão de salvar
+        // Configurar ação do botão Salvar
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Obter os novos valores dos campos
-                String newName = editName.getText().toString();
-                String newEmail = editEmail.getText().toString();
+                String name = editName.getText().toString().trim();
+                String email = editEmail.getText().toString().trim();
 
-                // Criar uma intenção para retornar os dados para a atividade principal
-                Intent resultIntent = new Intent();
-                resultIntent.putExtra("newName", newName);
-                resultIntent.putExtra("newEmail", newEmail);
-                setResult(RESULT_OK, resultIntent);
-                finish(); // Finaliza a atividade e retorna para a atividade principal
+                if (validateInput(name, email)) {
+                    // Aqui você pode adicionar a lógica para salvar os dados
+                    Toast.makeText(EditPerfilActivity.this, "Dados salvos com sucesso!", Toast.LENGTH_SHORT).show();
+                    // Finalizar a Activity (opcional)
+                    finish();
+                } else {
+                    Toast.makeText(EditPerfilActivity.this, "Por favor, preencha todos os campos.", Toast.LENGTH_SHORT).show();
+                }
             }
         });
+    }
+
+    // Método para validar o input do usuário
+    private boolean validateInput(String name, String email) {
+        return !name.isEmpty() && !email.isEmpty();
     }
 }
